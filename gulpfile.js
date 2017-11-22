@@ -37,8 +37,8 @@ gulp.task('html', function () {
 	gulp.src('dev/html/**/*.html')
     	.pipe(includer())
       .pipe(replace({
-        css: 'css/style.css'
-      }));
+        css: 'css/general.css'
+      }))
         .pipe(gulp.dest('build/'))
         .pipe(connect.reload());
 });

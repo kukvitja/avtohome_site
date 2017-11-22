@@ -1,0 +1,80 @@
+.logo{
+	position: relative;
+	background: url('/img/logo.png') no-repeat;
+	background-size: contain;
+	    // -webkit-transition: background-size: contain;
+    	// -moz-transition: background-size: contain;
+     // 	-o-transition: background-size: contain;
+    height: 400px;
+    margin-top: -60px;
+    @media screen and (min-width:@tablet-width){
+    		margin-left: -120px;
+    	}
+    @media screen and (min-width:@full-width){
+    		margin-left: 0px;
+    	}
+   .baner{
+    	position: absolute;
+    	height: 150px;
+    	background: url('/img/baner.png') no-repeat;
+    	background-size: contain;
+    		// -webkit-transition: background-size: contain;
+    		// -moz-transition: background-size: contain;
+     	// 	-o-transition: background-size: contain;
+    	display: block;
+    	top: 215px;
+    	left: 3%;
+    	font-size: 1rem;
+    	font-variant: small-caps;
+    	font-family: 'Abril Fatface', cursive;
+    	border-bottom: 3px solid silver;
+		h2{
+			margin-top: 116px;
+
+			span{
+    		color: #19006d;
+    		}
+		}
+		@media screen and (min-width:@tablet-width){
+    	 	top: 80px;
+    		left: 45%;
+    		font-size: 1.6rem;
+            line-height: 30px;
+    	}
+
+   		@media screen and (min-width:@full-width){
+    	 	top: 80px;
+    		left: 35%;
+    		font-size: 2rem;
+    	}
+    }
+
+
+    &-panel{
+    	margin-top: 60px;
+    	height: 50px;
+    	
+	@media screen and (min-width:@tablet-width){
+    	 	float: right;
+    	}
+
+   	@media screen and (min-width:@full-width){
+    	 	float: right;
+    	}
+    	a{
+    		display:block;
+    		float: left;
+    		color: #19006d;
+    		padding: 5px 10px;
+    		text-decoration: none;
+    			-webkit-transition: all  ease 0.5s;
+    			-moz-transition: all  ease 0.5s;
+     			-o-transition: all  ease 0.5s;
+     			transition: all  ease 0.5s;
+    		&:hover{
+    			color:#fff04c;
+    			padding-right: 20px;
+    		}
+    	}		
+    }
+}

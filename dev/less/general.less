@@ -1,0 +1,37 @@
+@import "imports/_resetCss";
+@import "imports/_settings";
+@import "imports/_mixins";
+.grib(m);
+@media screen and (min-width:@tablet-width){
+  .grib(p);  	
+}
+@media screen and (min-width:@full-width){
+  .grib(c);  	
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+@import "imports/header/_header";
+@import "imports/header/_logo";
+@import "imports/header/_menu";
+section{
+	width: 100%;
+	overflow: hidden;
+	background: linear-gradient(-45deg, #3901c6, #faff07);
+	border-radius: 10px;
+	box-shadow: 0 0 100px #e2e2e2;
+	// -webkit-box-shadow: 0 0 100px -10deg #e2e2e2;
+	-moz-box-shadow: 0 0 100px -10deg #e2e2e2;
+	margin: 40px auto;
+	@media screen and (min-width:@tablet-width){
+ 		width: 100%; 	
+	}
+	@media screen and (min-width:@full-width){
+  		width: 1024px;	
+	}
+}
+
+@import "imports/_article";
+@import "imports/_hot_deals";
