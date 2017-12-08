@@ -1,78 +1,75 @@
-nav{
-
-	.nav-img{
+.menu_site {
+	.nav-img {
 		width: 50px;
 		height: 50px;
 		float: right;
 
-		div{
+		div {
 			height: 10px;
 			border-radius: 10px;
 			margin-bottom: 10px;
 			background-color: #6b6b6b;
 		}
-		@media screen and (min-width:@tablet-width) {
-			display: none;
-			
+			@media screen and (min-width: @tablet-width) {
+				display: none;
+
 		}
-		@media screen and (min-width:@full-width) {
-			display: none;
-			
+			@media screen and (min-width: @full-width) {
+				display: none;
+
 		}
-	
+
 	}
 
+		ul {
+			width: 100%;
+			display: inline-block;
+			text-align: center;
 
-	ul{
-		width: 100%;
-		display: inline-block;
-		text-align: center;
-	
+			li {
+				width: 50%;
+				margin-left: 25%;
+				a {
+					text-decoration: none;
+					display: block;
+					color: #291700;
+					margin: 6px 0;
+					font-size: 1.5rem;
+					border-bottom: #ffe329 solid 5px;
+					box-sizing: border-box;
 
-		li{
-			width: 50%;
-			margin-left: 25%;
-			a{
-				text-decoration: none;
-				display: block;
-				color: #291700;
-				margin: 6px 0;
-				font-size: 1.5rem;
-				border-bottom: #ffe329 solid 5px;
-				box-sizing: border-box;
-
-					
+				}
 			}
-		}
-		@media screen and (min-width:@tablet-width) {
-			
-			position: absolute;
-			top:200px;
-			li{
-				width: 130px;
-				color: #2c2d4f;
-				background-color: #f0f0f0;
-				float: right;
-				margin-left: 15px;
-				a{
-					margin: 0;
-					font-size: 1.2rem;
-					height: 65px;
-					line-height: 50px;
-					border-bottom: #ffe329 solid 15px;
-					-webkit-transition: all  ease 0.8s;
-	    			-moz-transition: all  ease 0.8s;
-	     			-o-transition: all  ease 0.8s;
-     				transition: all  ease 0.8s;
+			@media screen and (min-width: @tablet-width) {
 
-					&:hover{
-						cursor: pointer;
-						border-bottom-width: 65px;
+				position: absolute;
+				top: 200px;
+				li {
+					width: 130px;
+					color: #2c2d4f;
+					background-color: #f0f0f0;
+					float: right;
+					margin-left: 15px;
+					a {
+						margin: 0;
+						font-size: 1.2rem;
+						height: 65px;
+						line-height: 50px;
+						border-bottom: #ffe329 solid 15px;
+						-webkit-transition: all ease 0.8s;
+						-moz-transition: all ease 0.8s;
+						-o-transition: all ease 0.8s;
+						transition: all ease 0.8s;
+
+						&:hover {
+							cursor: pointer;
+							border-bottom-width: 65px;
+						}
 					}
+
 				}
 
 			}
-			
 		}
+
 	}
-}	

@@ -18,7 +18,7 @@ gulp.task('mover', function() {
 });
 gulp.task('sprite', function() {
   var spriteData = gulp.src('dev/img/icons/*.png').pipe(spritecreator({
-      imgName: 'sprite.png',
+      imgName: '../img/sprite.png',
       cssName: 'sprite.css',
       algorithm: 'binary-tree'
   }));

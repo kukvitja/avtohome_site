@@ -8,9 +8,9 @@
 	height: 50px;
 	background: url("@{pathToIcon}@{url}.png") no-repeat center;
 }
-.grib(@name, @columnNumber: 1) when (@columnNumber <= @columnCount){
+.grab(@name, @columnNumber: 1) when (@columnNumber <= @columnCount){
 	.@{name}@{columnNumber}{
 		width: (100% / @columnCount) * @columnNumber;
 	}
-	.grib(@name, @columnNumber+1);
+	.grab(@name, @columnNumber+1);
 }

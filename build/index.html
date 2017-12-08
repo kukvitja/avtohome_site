@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Автобазар у Хмельницькій області. Купити, Продати автомобиль</title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<link href="/img/logo_icon.png" rel="shortcup icon" type="image/x-icon" />
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Rozha+One" rel="stylesheet">
-	<link rel="stylesheet" href="css/general.css">
+	    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Автобазар у Хмельницькій області. Купити, Продати автомобиль</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="/img/logo_icon.png" rel="shortcup icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Rozha+One|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/general.css">
 
-	<meta name="description" content="" />
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="../aspect/js/wow.min.js"></script>
-	<script>new WOW().init();</script>
+    <link rel="stylesheet" href="css/sprite.css">
+    <meta name="description" content="" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../aspect/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+
+
 </head>
 <body>
 	<header>
@@ -22,18 +25,27 @@
 	<h2>купи авто своєї мрії на <span>avtodim.com.ua</span></h2>
 	</div>
 	<div class="logo-panel">
-		<div class="social">
-			<div></div>
-			<div></div>
-			<div></div>	
-		</div>
 		<a href="#" title="" alt="">Написати Адміністратору |</a>
 		<a href="#" title="" alt="">Про Проект |</a>
-		<a href="#" title="" alt="">Купити Запчастини </a>
+		<a href="#" title="" alt="">Купити Запчастини </a>	
+	</div>
+	<div class=my-office>
+		<span>
+			ВХІД
+		</span>
+		<span>
+			<a href="registration.php" title="registration" alt="registration">
+			 реєстрація 
+			</a>
+		</span>
+		<span>
+				МОЄ МЕНЮ
+		</span>
+		
 		
 	</div>
 </div>
-		<nav>
+		<nav class="menu_site">
 	<div class="nav-img">
 		<div></div>
 		<div></div>
@@ -47,10 +59,13 @@
 	</ul>
 </nav>
 	</header>
-	<section>
-		<div class="maps-nav">
+	<div class="maps-nav">
+	<div>
+		
+	</div>
 			
-		</div>
+</div>
+	<section>
 		<article class="announcement m10 p8 c6">
 	<div class="announcement-foto">
 		<img src="img/car/images.jpg" alt="">
@@ -58,13 +73,13 @@
 	</div>
 
 	<div class="announcement-description">
-		<div class="announcement-title">
-			<span class="m12 p6">BMW 520</span>
-			<span class="m12 p2">2001</span>
-			<span class="m12 p3">14000 $</span>
-		</div>
+		<a class="announcement-title" href="#">
+			<span class="m12 p8"> BMW 520 xDrive</span>
+			<span class="m12 p3"> 14000 $</span>
+		</a>
 		<div class="announcement-addition">
 			<span>
+				<p>2001 p.</p>
 				<p>Дизель</p>
 				<p>2.0 л.</p>
 				<p>50 к.в.</p>
@@ -77,8 +92,7 @@
 				<p>Білий</p>
 			</span>
 		</div>
-		<div class="announcement-other">
-			
+		<div class="announcement-other">	
 			<span>Продавець: </span><br />
 			<span>Опубліковано: </span>
 		</div>
@@ -92,13 +106,13 @@
 	</div>
 
 	<div class="announcement-description">
-		<div class="announcement-title">
-			<span class="m12 p6">BMW 520</span>
-			<span class="m12 p2">2001</span>
-			<span class="m12 p3">14000 $</span>
-		</div>
+		<a class="announcement-title" href="#">
+			<span class="m12 p8"> BMW 520 xDrive</span>
+			<span class="m12 p3"> 14000 $</span>
+		</a>
 		<div class="announcement-addition">
 			<span>
+				<p>2001 p.</p>
 				<p>Дизель</p>
 				<p>2.0 л.</p>
 				<p>50 к.в.</p>
@@ -111,8 +125,7 @@
 				<p>Білий</p>
 			</span>
 		</div>
-		<div class="announcement-other">
-			
+		<div class="announcement-other">	
 			<span>Продавець: </span><br />
 			<span>Опубліковано: </span>
 		</div>
@@ -120,10 +133,36 @@
 	</div>
 </article>
 		<section class="hot-deals">
-	<h2>ГАРЯЧІ ПРОПОЗИЦІЇ:</h2>
+	<div class="wrapper">
+		<h2>ГАРЯЧІ ПРОПОЗИЦІЇ:</h2>
 		<article> 
+			<div class="hot-deals-foto">
+				<img src="img/car/images.jpg" alt="">
+				<div class="foto-counter"></div>
+			</div>
 
+			<div class="hot-deals-description">
+				<a class="ahot-deals-title" href="#">
+					<span class="m8">BMW 520</span>
+					<span class="m4">2001 p.</span>
+					<span class="m12">Ціна: 14000 $</span>
+				</a>
+				<div class="hot-deals-addition">
+					<span class="m5">
+						<p>Дизель</p>
+						<p>2.0 л.</p>
+					</span>
+					<span class="m5">
+						<p>47 тис. км</p>
+						<p>Автомат</p>
+					</span>
+				</div>
+		
+			</div>
 		</article>
+
+		
+
 
 		<article>
 			
@@ -131,15 +170,268 @@
 		<article>
 			
 		</article>
-		<article>
-			
-		</article>
+	</div>
 </section>
+		<article class="announcement m10 p8 c6">
+	<div class="announcement-foto">
+		<img src="img/car/images.jpg" alt="">
+		<div class="foto-counter"></div>
+	</div>
+
+	<div class="announcement-description">
+		<a class="announcement-title" href="#">
+			<span class="m12 p8"> BMW 520 xDrive</span>
+			<span class="m12 p3"> 14000 $</span>
+		</a>
+		<div class="announcement-addition">
+			<span>
+				<p>2001 p.</p>
+				<p>Дизель</p>
+				<p>2.0 л.</p>
+				<p>50 к.в.</p>
+			</span>
+			<span>
+				<p>47 тис. км</p>
+				<p>Автомат</p>
+			</span>
+			<span>
+				<p>Білий</p>
+			</span>
+		</div>
+		<div class="announcement-other">	
+			<span>Продавець: </span><br />
+			<span>Опубліковано: </span>
+		</div>
+		
+	</div>
+</article>
+		<article class="announcement m10 p8 c6">
+	<div class="announcement-foto">
+		<img src="img/car/images.jpg" alt="">
+		<div class="foto-counter"></div>
+	</div>
+
+	<div class="announcement-description">
+		<a class="announcement-title" href="#">
+			<span class="m12 p8"> BMW 520 xDrive</span>
+			<span class="m12 p3"> 14000 $</span>
+		</a>
+		<div class="announcement-addition">
+			<span>
+				<p>2001 p.</p>
+				<p>Дизель</p>
+				<p>2.0 л.</p>
+				<p>50 к.в.</p>
+			</span>
+			<span>
+				<p>47 тис. км</p>
+				<p>Автомат</p>
+			</span>
+			<span>
+				<p>Білий</p>
+			</span>
+		</div>
+		<div class="announcement-other">	
+			<span>Продавець: </span><br />
+			<span>Опубліковано: </span>
+		</div>
+		
+	</div>
+</article>
+		<article class="announcement m10 p8 c6">
+	<div class="announcement-foto">
+		<img src="img/car/images.jpg" alt="">
+		<div class="foto-counter"></div>
+	</div>
+
+	<div class="announcement-description">
+		<a class="announcement-title" href="#">
+			<span class="m12 p8"> BMW 520 xDrive</span>
+			<span class="m12 p3"> 14000 $</span>
+		</a>
+		<div class="announcement-addition">
+			<span>
+				<p>2001 p.</p>
+				<p>Дизель</p>
+				<p>2.0 л.</p>
+				<p>50 к.в.</p>
+			</span>
+			<span>
+				<p>47 тис. км</p>
+				<p>Автомат</p>
+			</span>
+			<span>
+				<p>Білий</p>
+			</span>
+		</div>
+		<div class="announcement-other">	
+			<span>Продавець: </span><br />
+			<span>Опубліковано: </span>
+		</div>
+		
+	</div>
+</article>
+		<article class="announcement m10 p8 c6">
+	<div class="announcement-foto">
+		<img src="img/car/images.jpg" alt="">
+		<div class="foto-counter"></div>
+	</div>
+
+	<div class="announcement-description">
+		<a class="announcement-title" href="#">
+			<span class="m12 p8"> BMW 520 xDrive</span>
+			<span class="m12 p3"> 14000 $</span>
+		</a>
+		<div class="announcement-addition">
+			<span>
+				<p>2001 p.</p>
+				<p>Дизель</p>
+				<p>2.0 л.</p>
+				<p>50 к.в.</p>
+			</span>
+			<span>
+				<p>47 тис. км</p>
+				<p>Автомат</p>
+			</span>
+			<span>
+				<p>Білий</p>
+			</span>
+		</div>
+		<div class="announcement-other">	
+			<span>Продавець: </span><br />
+			<span>Опубліковано: </span>
+		</div>
+		
+	</div>
+</article>
+		<article class="announcement m10 p8 c6">
+	<div class="announcement-foto">
+		<img src="img/car/images.jpg" alt="">
+		<div class="foto-counter"></div>
+	</div>
+
+	<div class="announcement-description">
+		<a class="announcement-title" href="#">
+			<span class="m12 p8"> BMW 520 xDrive</span>
+			<span class="m12 p3"> 14000 $</span>
+		</a>
+		<div class="announcement-addition">
+			<span>
+				<p>2001 p.</p>
+				<p>Дизель</p>
+				<p>2.0 л.</p>
+				<p>50 к.в.</p>
+			</span>
+			<span>
+				<p>47 тис. км</p>
+				<p>Автомат</p>
+			</span>
+			<span>
+				<p>Білий</p>
+			</span>
+		</div>
+		<div class="announcement-other">	
+			<span>Продавець: </span><br />
+			<span>Опубліковано: </span>
+		</div>
+		
+	</div>
+</article>
+		<article class="announcement m10 p8 c6">
+	<div class="announcement-foto">
+		<img src="img/car/images.jpg" alt="">
+		<div class="foto-counter"></div>
+	</div>
+
+	<div class="announcement-description">
+		<a class="announcement-title" href="#">
+			<span class="m12 p8"> BMW 520 xDrive</span>
+			<span class="m12 p3"> 14000 $</span>
+		</a>
+		<div class="announcement-addition">
+			<span>
+				<p>2001 p.</p>
+				<p>Дизель</p>
+				<p>2.0 л.</p>
+				<p>50 к.в.</p>
+			</span>
+			<span>
+				<p>47 тис. км</p>
+				<p>Автомат</p>
+			</span>
+			<span>
+				<p>Білий</p>
+			</span>
+		</div>
+		<div class="announcement-other">	
+			<span>Продавець: </span><br />
+			<span>Опубліковано: </span>
+		</div>
+		
+	</div>
+</article>
 	</section>	
 	
 	
-	<footer>
+	<footer id="footer">
+		<canvas id="canvas" width="1400" height="200">
+	
+</canvas>
+<div class="footer-wrapers">
+	<div class="footer-social m12 p4">
 		
+	</div>
+
+	<div class="footer-logo m12 p2">
+		
+	</div>
+
+	<div class="footer-licenzion m12 p6">
+		Всі права захищено 2017 <?= data(Y)?> АВТО ДІМ
+	</div>
+	<div class="footer-partners m12 p4">
+		<p>Розмістити рекламу на сайті</p>
+		<p>Допомога по сайту</p>
+		<p>Наші партнери</p>
+	</div>
+</div>
+<script type="text/javascript">
+    // function draw() {
+    if (window.innerWidth <= 768) {
+        var canvas = document.getElementById('canvas');
+        canvas.style.height = '400px';
+    } else {
+
+        var cv = document.getElementById('canvas');
+
+        // if (cv.getContext) {
+        var ctx = cv.getContext('2d');
+        // ctx.fillRect(25,25,100,100);
+        // ctx.clearRect(45,45,60,60);
+        // ctx.strokeRect(50,50,50,50);
+        ctx.fillStyle = "rgba(255, 255, 255, 1.0)";
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        // ctx.lineTo();
+        // ctx.
+        ctx.quadraticCurveTo(400, 100, 800, 60);
+        ctx.quadraticCurveTo(1200, 0, 1200, 0);
+        // ctx.quadraticCurveTo(0,0,0,0);
+        // ctx.quadraticCurveTo(60,120,65,100);
+        // ctx.quadraticCurveTo(125,100,125,62.5);
+        // ctx.quadraticCurveTo(125,25,75,25);
+
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fill();
+    }
+
+    // 	}
+    // }
+    // draw();
+</script>
+
+
 	</footer>
 
 </body>

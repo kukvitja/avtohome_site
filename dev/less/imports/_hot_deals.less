@@ -1,14 +1,19 @@
 .hot-deals{
-	height: 300px;
-	width: 6300px;
+	position: relative;
 	background: rgba(146, 153, 163, 0.6);
 	border-radius: 0px;
     box-shadow: 0 0 0;
     clear: both;
     padding:10px 10px 0px 10px;
+    .wrapper{
+    	height: 300px;
+		width: 6300px;
+
+    }
 	h2{
 		font-size: 1.2rem;
 		margin-bottom: 10px;
+		color: #b70500;
 	}
 	article{
 		height: 280px;
@@ -19,14 +24,56 @@
 		border-bottom: 0px;
 		float: left;
 		margin-left: 20px;
-		
-		&:before{
-			content: "";
-		}
 
-		&:after{
-		 content: "";  
+	}
+
+	&-foto{
+		height: 140px;
+		width: 100%;
+
+		img{
+			display: block;
+			height: 100%;
+			margin: auto;
 		}
 
 	}
+
+	&-description{
+		padding: 5%;
+		font-family: 'Lato', sans-serif;
+		font-style:oblique;
+
+		span{
+			display: inline-block;
+			font-size: 1.2rem;
+			float: left;
+			line-height: 25px;
+		}
+	}
+
+	&:before, &:after{
+		content: "";
+		display: block;
+		top: 50%;
+    	transform: translateY(-10px);
+		position: absolute;
+		width: 0;
+  		height: 0;
+  		border: 25px solid transparent;  
+  		cursor: pointer;
+	}
+
+	&:before{
+		left: 0;
+		border-right-color: #fffb00; 
+		border-left: 0;
+	}	
+
+	&:after{
+		right: 20px;
+  		border-left-color: #fffb00;  
+  		border-right: 0; 
+	}
+	
 }
