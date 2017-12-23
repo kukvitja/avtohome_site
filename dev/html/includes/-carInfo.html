@@ -1,0 +1,107 @@
+<div class="maps-nav-order">
+    <div class="active m4 p4 c3">Дані про власника</div>
+    <div class="active m4 p4 c3">Опис Автомобіля</div>
+    <div class="m4 p4 c3">Публікація оголошення</div>
+</div>
+    <div class="form-registration">
+        <div class="img-bg m1 p7">
+            <p>Поля позначені " * " мають бути заповнені</p>
+        </div>
+
+        <form action="#" class="m11 p4">
+            <select name="category" class="input" title="category">
+                <option disabled selected>* Вкажіть категорію</option>
+                <option value="pkw">Легкові</option>
+                <option value="lkw">Грузові</option>
+                <option value="moto">Мото</option>
+                <option value="technique">Техніка</option>
+            </select>
+                <select name="bottomCategopy" class="input" title="bottomCategopy">
+                    <option disabled selected>* Виберіть підкатегорію</option>
+                    <option value="truck">Тягачі</option>
+                    <option value="semitrailer">Полуприцепи</option>
+                    <option value="van">Бус</option>
+                </select>
+            <input type="text" placeholder="* Вкажіть Марку" class="input">
+            <input type="text" placeholder="* Вкажіть Модель" class="input">
+            <textarea placeholder="Опис Автомобіля" class="input"></textarea>
+            <select name="engine" class="input" title="engine">
+                <option disabled selected>* Двигун</option>
+                <option value="">Дизель</option>
+                <option value="">Бензин</option>
+                <option value="">Газ/Бензин</option>
+                <option value="">Гибрид</option>
+                <option value="">Електро</option>
+            </select>
+            <input type="number" placeholder="* Ціна" class="input">
+            <input type="number" placeholder="* Рік випуску" class="input">
+            <input type="number" placeholder="* Пробіг (Кілометрів)" class="input">
+            <input type="number" placeholder="* Об'єм двигуна (літрів)" class="input">
+            <input type="number" placeholder="* Потужнівть (Кіловат)" class="input">
+            <select name="transmission" id="transmission" title="Тип коробки" class="input">
+                <option disabled selected>Коробка Передач</option>
+                <option value="">Механика</option>
+                <option value="">Автомат</option>
+            </select>
+            <select name="region" id="region" title="Регіон" class="input">
+                <option disabled selected>Регион</option>
+                <option value="">1</option>
+
+            </select>
+            <select name="carcase" id="carcase" title="carcase" class="input">
+                <option disabled selected>Тип Кузова</option>
+                <option value="">Седан</option>
+                <option value="">Фургон</option>
+                <option value="">Универсал</option>
+                <option value="">Лимузин</option>
+                <option value="">Минивэн</option>
+                <option value="">Купе</option>
+                <option value="">Кабриолет</option>
+                <option value="">Хэтчбек</option>
+                <option value="">Пикап</option>
+                <option value="">Внедорожник</option>
+
+            </select>
+            <div class="cb" >
+                <label>* КОЛІР:
+                <input type="color" name="color" title="Колір"><br>
+                </label>
+                <!--//Блок основних кольорів-->
+                <label for="metallic">Металлик
+                <input type="checkbox" name="metallic" value="metallic" id="metallic">
+                </label>
+            </div>
+            <div class="cb">
+                <label>ПРИВОД:</label>
+                <label for="back">Задний
+                <input type="checkbox" name="back" value="back" id="back">
+                </label>
+                <label for="front">Передний
+                <input type="checkbox" name="front" value="front" id="front">
+                </label>
+                <label for="full">Полный
+                <input type="checkbox" name="full" value="full" id="full">
+                </label>
+            </div>
+            <div class="complement">
+                <label>ІНШЕ:</label>
+                <label>После ДТП
+                    <input type="checkbox" name="dtp" value="dtp" id="dtp">
+                </label>
+                <label>Кредитное Авт
+                    <input type="checkbox" name="kreditAvto" value="kreditAvto" id="kreditAvto">
+                </label>
+                <label>Нерастаможенные
+                    <input type="checkbox" name="inexpensive" value="inexpensive" id="inexpensive">
+                </label>
+                <label for="salesOnCredit">Продаж в кредит
+                    <input type="checkbox" name="salesOnCredit" value="salesOnCredit" id="salesOnCredit">
+                </label>
+            </div>
+            <p class="input">Добавити Фото
+            <input type="file" placeholder="Добавити Фото">
+            </p>
+            <button class="button">Продовжити</button>
+
+        </form>
+    </div>

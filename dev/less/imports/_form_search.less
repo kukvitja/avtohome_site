@@ -1,0 +1,227 @@
+.form-search{
+  background-color: #5a8489;
+  padding: 20px;
+  box-sizing: border-box;
+ .clear{
+   clear: both;
+ }
+// меню пошуку
+  .menu_search{
+    float: right;
+    ul{
+      font-size: 0;
+    }
+    li{
+      display: inline-block;
+      width: 25%;
+      height: 85px;
+      text-align: center;
+      box-sizing: border-box;
+      border-left: @formSearchText solid 4px;
+      &:first-child{
+        border-left: 0;
+      }
+
+      a{
+        display: block;
+        position: relative;
+        height: 85px;
+        background-color: @formSearchBg;
+        color: @formSearchText;
+        font-size: 1.3rem;
+        line-height: 25px;
+        transition: all 0.8s ease;
+        padding: 50px 0 10px 0;
+        box-sizing: border-box;
+
+        &:hover{
+          background-color: @formSearchText;
+          color: @formSearchBg;
+        }
+
+        &:active{
+          background-color: @formSearchText;
+          color: @formSearchBg;
+        }
+        span{
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: 35%;
+
+        }
+      }
+    }
+  }
+
+//головна форма фошуку
+  .formFilter{
+    float: right;
+    background: @formSearchBg;
+    position: relative;
+    border-radius: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    margin: 0;
+    .advertising{
+      // Строки навігації фільтра
+    }
+    .fіlter, .filter_hidden{
+      color: @formSearchText;
+      padding: 30px;
+      border-top: 4px solid @formSearchText;
+
+      .selection{
+        text-align: center;
+        border: 2px solid #cccb08;
+        padding: 5px 0 5px 0;
+        background-color: #e2e2e2;
+        float: left;
+        margin-left: 5%;
+        margin-bottom: 10px;
+
+
+
+        label, select, input{
+          padding: 2%;
+          box-sizing: border-box;
+          height: 40px;
+          width: 100%;
+          font-size: 1.2rem;
+          background-color: transparent;
+          border: none;
+        }
+        label{
+          margin-bottom: -20px;
+          display: block;
+        }
+        .interval{
+          width: 40%;
+          float: left;
+          box-sizing: border-box;
+          border: 2px solid slategray;
+          margin: 0 5%;
+        }
+      }
+    }
+    .filter_hidden{
+      padding: 0;
+      padding-top: 10px;
+      .cb{
+        float: left;
+        width: 90%;
+        margin-bottom: 20px;
+        border:2px solid slategrey;
+        padding: 2%;
+
+        label, input{
+          display: block;
+          width: 25px;
+          margin-left: 30px;
+          height: 25px;
+          @media screen and (min-width: @tablet-width){
+            display: inline;
+
+          }
+        }
+        input[type="checkbox"]{
+          margin:0;
+          width: 25px;
+          height: 25px;
+          -webkit-transform: translate(170px, -31px);
+          -moz-transform: translate(170px, -31px);
+          -ms-transform: translate(170px, -31px);
+          -o-transform: translate(170px, -31px);
+          transform: translate(170px, -31px);
+          @media screen and (min-width:@tablet-width){
+            margin:0 10px;
+            -webkit-transform: translate(0px, 8px);
+            -moz-transform: translate(0px, 8px);
+            -ms-transform: translate(0px, 8px);
+            -o-transform: translate(0px, 8px);
+            transform: translate(0px, 8px);
+          }
+        }
+      }
+      .complement{
+        float: left;
+        margin-top: 15px;
+        margin-left: 3.333333%;
+        margin-bottom: 15px;
+
+        label{
+          display: block;
+          @media screen and (min-width: @tablet-width){
+            display: inline;
+          }
+        }
+      }
+    }
+    .orderButton {
+      border: solid 2px #0a111c;
+      border-radius: 20px;
+      float: right;
+      margin-top: 20px;
+      width: 250px;
+      height: 50px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: @formSearchText ;
+      color:@formSearchBg;
+      box-shadow: inset -1px 1px 20px 7px #2c2d4f ;
+      transition: all  ease 0.6s;
+
+      &:hover{
+        animation: anBtn 0.6s;
+        cursor: pointer;
+        background-color: #cccb08;
+        color: @formSearchText;
+      }
+      @media screen and (min-width: @tablet-width){
+        float: right;
+        margin-right: 50px;
+      }
+    }
+
+    .reset{
+      margin: 10px 0 0 5%;
+
+      .resetBtn{
+        border: 0;
+        outline: none;
+        background: transparent;
+        color: red;
+        text-decoration: underline;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+
+    #AdvancedSearch{
+      position: relative;
+      width: 150px;
+      padding-left: 25px;
+      float: left;
+      margin-top: 50px;
+      -webkit-transition: color ease 0.6s ;
+      -moz-transition: color ease 0.6s ;
+      -o-transition: color ease 0.6s ;
+      transition: color ease 0.6s ;
+      div{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 0;
+      }
+      &:hover{
+        cursor: pointer;
+        color: red;
+
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,57 @@
+<canvas id="canvas" width="1400" height="200">
+	
+</canvas>
+<div class="footer-wrapers">
+	<div class="footer-social m12 p4">
+		
+	</div>
+
+	<div class="footer-logo m12 p2">
+		
+	</div>
+
+	<div class="footer-licenzion m12 p6">
+		Всі права захищено 2017 <?= data(Y)?> АВТО ДІМ
+	</div>
+	<div class="footer-partners m12 p4">
+		<p>Розмістити рекламу на сайті</p>
+		<p>Допомога по сайту</p>
+		<p>Наші партнери</p>
+	</div>
+</div>
+<script type="text/javascript">
+    // function draw() {
+    if (window.innerWidth <= 768) {
+        var canvas = document.getElementById('canvas');
+        canvas.style.height = '400px';
+    } else {
+
+        var cv = document.getElementById('canvas');
+
+        // if (cv.getContext) {
+        var ctx = cv.getContext('2d');
+        // ctx.fillRect(25,25,100,100);
+        // ctx.clearRect(45,45,60,60);
+        // ctx.strokeRect(50,50,50,50);
+        ctx.fillStyle = "rgba(255, 255, 255, 1.0)";
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        // ctx.lineTo();
+        // ctx.
+        ctx.quadraticCurveTo(400, 100, 800, 60);
+        ctx.quadraticCurveTo(1200, 0, 1200, 0);
+        // ctx.quadraticCurveTo(0,0,0,0);
+        // ctx.quadraticCurveTo(60,120,65,100);
+        // ctx.quadraticCurveTo(125,100,125,62.5);
+        // ctx.quadraticCurveTo(125,25,75,25);
+
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fill();
+    }
+
+    // 	}
+    // }
+    // draw();
+</script>
+

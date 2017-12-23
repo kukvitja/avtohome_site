@@ -1,0 +1,59 @@
+.form-wrapper{
+  background:#b9b9b9;
+
+
+  .maps-nav-order{
+    height:50px;
+    div{
+      display:inline-block;
+      position:relative;
+      //width:20%;
+      height:50px;
+      line-height:50px;
+      padding:0 10px 0 10px;
+      box-sizing:border-box;
+      float:left;
+        &:after{
+          position:absolute;
+          content:">>>";
+          right:5px;
+          //border:25px solid transparent;
+          //border-left-color:#0a111c;
+
+        }
+      &:last-child:after{
+        content:"";
+      }
+    }
+    .active{
+      background-color:rgba(70,69,71,0.8);
+      color:#b9b9b9;
+    }
+  }
+
+  .form-registration{
+    .img-bg{
+      display:none;
+      position:relative;
+      @media screen and (min-width:@tablet-width){
+        display:block;
+        background:url("/img/PNGPIX-COM-BMW-7-Series-Car-PNG-Image.png") no-repeat;
+        background-size:contain;
+        height:400px;
+        float:left;
+        p{
+          position:absolute;
+          bottom:50px;
+          left:20%;
+          color:red;
+          font-size:1.2rem;
+        }
+      }
+    }
+    form{
+      display:block;
+      float:left;
+    }
+  }
+
+}

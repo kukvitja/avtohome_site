@@ -1,0 +1,173 @@
+<div class="form-search">
+    <nav class="menu_search  m12 p9">
+        <ul>
+            <li><a href="" title="Легкові автомобілі"><span class="icon-car"></span>Легкові</a></li>
+            <li><a href="" title="Грузові автомобілі"><span class="icon-truck"></span>Грузові</a></li>
+            <li><a href="" title="Мото техніка"><span class="icon-motorcycle"></span>Мото</a></li>
+            <li><a href="" title="Спец. техніка"><span class="icon-excavator"></span>Tехніка</a></li>
+        </ul>
+    </nav>
+
+    <!-- <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> -->
+
+    <section class="formFilter m12 p12 c9">
+        <div class="advertising"></div>
+        <form action="" id="filterCar">
+            <div class="fіlter">
+                <div class="selection m10 p3 c3">
+                    <select name="" id="markka" title="Марка">
+                        <option disabled selected>Марка</option>
+                        <option value="markka">1</option>
+
+                    </select>
+                </div>
+                <div class="selection m10 p3 c3">
+                    <select name="model" id="model" title="Модель">
+                        <option disabled selected>Модель</option>
+                        <option value="">1</option>
+
+                    </select>
+                </div>
+                <div class="selection m10 p3 c3">
+                    <select name="engine" id="engine" title="Двигун">
+                        <option disabled selected>Двигун</option>
+                        <option value="">Дизель</option>
+                        <option value="">Бензин</option>
+                        <option value="">Газ/Бензин</option>
+                        <option value="">Гибрид</option>
+                        <option value="">Електро</option>
+                </select>
+                </div>
+                <div class="selection int  m10 p5">
+                    <label>ЦІНА</label><br/>
+                    <select name="price" class="interval" title="Ціна">
+                        <option disabled selected>От</option>
+                        <option value="">1000</option>
+                    </select>
+                    <select name="price" class="interval" title="Ціна">
+                        <option disabled selected>До</option>
+                        <option value="">1000</option>
+                    </select>
+                </div>
+                <div class="selection int  m10 p5">
+                    <label>РІК</label><br/>
+                    <select name="yar" class="interval" title="Рік">
+                        <option disabled selected>От</option>
+                        <option value="">1</option>
+                    </select>
+                    <select name="yar" class="interval" title="Рік">
+                        <option disabled selected>До</option>
+                        <option value="">1</option>
+                    </select>
+                </div>
+
+                <div class="selection int  m10 p5">
+                    <label>ОБЪЕМ, л.</label><br/>
+                    <input type="number" name="bulk_min" placeholder="ОТ" class="interval">
+                    <input type="number" name="bulk_max" placeholder="ДО" class="interval">
+                </div>
+                <div class="selection int m10 p5" >
+                    <label>МОЧНОСТЬ, Л.С.</label><br/>
+                    <input type="number" name="bulk_min" placeholder="ОТ" class="interval">
+                    <input type="number" name="bulk_max" placeholder="ДО" class="interval">
+                </div>
+                <div class="clear"></div>
+                <div class="hidden filter_hidden ">
+
+                    <div class="selection m10 p4">
+                        <select name="transmission" id="transmission" title="Тип коробки">
+                            <option disabled selected>Коробка Передач</option>
+                            <option value="">Механика</option>
+                            <option value="">Автомат</option>
+
+                        </select>
+                    </div>
+                    <div class="selection m10 p4">
+                        <select name="region" id="region" title="Регіон">
+                            <option disabled selected>Регион</option>
+                            <option value="">1</option>
+
+                        </select>
+                    </div>
+                    <div class="selection int m10 p4">
+                        <label>ПРОБЕГ</label><br/>
+                        <input type="number" name="bulk_min" placeholder="ОТ" class="interval">
+                        <input type="number" name="bulk_max" placeholder="ДО" class="interval">
+                    </div>
+                    <div class="selection int m10 p4">
+                        <label for="carcase">КУЗОВ</label><br/>
+                        <select name="carcase" id="carcase">
+                            <option disabled selected>Тип Кузова</option>
+                            <option value="">Седан</option>
+                            <option value="">Фургон</option>
+                            <option value="">Универсал</option>
+                            <option value="">Лимузин</option>
+                            <option value="">Минивэн</option>
+                            <option value="">Купе</option>
+                            <option value="">Кабриолет</option>
+                            <option value="">Хэтчбек</option>
+                            <option value="">Пикап</option>
+                            <option value="">Внедорожник</option>
+
+                        </select>
+                    </div>
+                    <div class="cb">
+                        <label>КОЛІР:</label>
+                        <input type="color" name="color" title="Колір"><br>
+                        <!--//Блок основних кольорів-->
+                        <label for="metallic">Металлик</label>
+                        <input type="checkbox" name="metallic" value="metallic" id="metallic">
+                    </div>
+                    <div class="cb">
+                        <label>ПРИВОД:</label>
+                        <label for="back">Задний</label>
+                        <input type="checkbox" name="back" value="back" id="back">
+                        <label for="front">Передний</label>
+                        <input type="checkbox" name="front" value="front" id="front">
+                        <label for="full">Полный</label>
+                        <input type="checkbox" name="full" value="full" id="full">
+                    </div>
+                    <div class="complement">
+                        <label>ІНШЕ:</label><br/><br>
+                        <label>После ДТП
+                            <input type="checkbox" name="dtp" value="dtp" id="dtp">
+                        </label>
+                        <label>Кредитное Авт
+                            <input type="checkbox" name="kreditAvto" value="kreditAvto" id="kreditAvto">
+                        </label>
+                        <label>Нерастаможенные
+                            <input type="checkbox" name="inexpensive" value="inexpensive" id="inexpensive">
+                        </label>
+                        <label for="salesOnCredit">Продаж в кредит
+                            <input type="checkbox" name="salesOnCredit" value="salesOnCredit" id="salesOnCredit">
+                        </label>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                <div class="reset">
+                    <button type="button" onclick="this.form.reset();" class="resetBtn">Очистить фильтер</button>
+                </div>
+                <button class="orderButton ">НАЙТИ АВТО</button>
+                <div id="AdvancedSearch">
+                    <div class="icon-search"></div>
+                    Расширенный поиск
+                </div>
+                <div class="clear"></div>
+
+            </div>
+
+
+        </form>
+    </section>
+    <div class="clear">
+
+    </div>
+</div>
