@@ -10,21 +10,24 @@
 @media screen and (min-width:@full-width){
   .grab(c);
 }
+
 body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.hidden{
-	display: none;
+.clear{
+	clear: both;
 }
+
 @import "imports/header/_header";
 @import "imports/header/_logo";
 @import "imports/header/_menu";
 section{
-	z-index: 1;
+	z-index: 5;
+	position:relative;
 	width: 100%;
-	overflow: hidden;
+	//overflow: hidden;
 	background: linear-gradient(-45deg, rgba(57, 1, 198, 0.48), rgba(150, 198, 1, 0.6), rgba(57, 1, 198, 0.71), #faff07);
 	border-radius: 10px;
 	box-shadow: 0 0 100px #e2e2e2;
@@ -38,6 +41,30 @@ section{
   		width: 1024px;	
 	}
 }
+.color{
+	position:fixed;
+	top:10px;
+	left:10px;
+	width:200px;
+	height:200px;
+
+	div{
+		width:50%;
+		height:33.33333%;
+		box-sizing:border-box;
+		border:5px solid #fffb00;
+		float:left;
+		&:hover{
+			cursor:pointer;
+		}
+	}
+	.red{ background-color:red}
+	.blue{ background-color:blue}
+	.gray{ background-color:gray}
+	.green{ background-color:green}
+	.white{ background-color:white}
+	.black{background-color:black}
+}
 
 @import "imports/_maps_nav";
 @import "imports/_article";
@@ -48,7 +75,17 @@ section{
 @import "imports/addCar/_car_info";
 @import "imports/addCar/_audience";
 @import "imports/_publication";
+@import "imports/_news";
+.about{
+	background-color:rgba(212, 212, 212, 0.6);
+	margin:15px auto;
+	padding:10px;
+	border-radius:10px;
+}
 
-
-
+@import "imports/_hidden_windows";
 @import "imports/_footer";
+.hidden{
+	display: none;
+}
+

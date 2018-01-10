@@ -28,6 +28,30 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 48px;
   height: 48px;
 }
+.icon-if_43-twitter_104461 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -79px;
+  width: 32px;
+  height: 32px;
+}
+.icon-if_78-instagram_104425 {
+  background-image: url(../img/sprite.png);
+  background-position: -32px -79px;
+  width: 32px;
+  height: 32px;
+}
+.icon-if_80-google-plus_104424 {
+  background-image: url(../img/sprite.png);
+  background-position: -64px -79px;
+  width: 32px;
+  height: 32px;
+}
+.icon-if_facebook_icon_291786 {
+  background-image: url(../img/sprite.png);
+  background-position: -96px -79px;
+  width: 32px;
+  height: 32px;
+}
 .icon-motorcycle {
   background-image: url(../img/sprite.png);
   background-position: -96px 0px;

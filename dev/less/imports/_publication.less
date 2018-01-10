@@ -1,4 +1,6 @@
 .pub{
+  padding:20px;
+  box-sizing:border-box;
   .header-pub{
     padding:10px;
     border:2px solid #cccb08;
@@ -10,9 +12,11 @@
   }
     span{
       display:block;
-      float:left;
-      text-align:right;
-      padding-right:10px;
+      @media screen and (min-width:@full-width){
+        float:left;
+        text-align:right;
+        padding-right:10px;
+      }
     }
   }
      .foto-pub{
