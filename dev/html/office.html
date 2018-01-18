@@ -4,32 +4,56 @@
     <!--#insert file="includes/-head.html"-->
 </head>
 <body>
-
+<div class="wind">
+    <p>Зберегти зміни</p>
+    <button>Зберегти</button>
+    <button>Скасувати</button>
+</div>
 <header>
     <!--#insert file="includes/-logo.html"-->
     <!--#insert file="includes/-menu.html"-->
 </header>
 <!--#insert file="includes/-maps_nav.html"-->
-<section>
-    <div class="m12 p5">
+<section class="office">
+    <div class="m12 p5 my-announce">
         <h2>Мої Публікації</h2>
-        <article class="min-pab">
-            <div class="setting">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+        <article class="min-pab m11 p10">
+            <div class="setting m12">
+                <span class="m12 p6">Добавити в гарячі</span>
+                <span class="m12 p6">Підняти вище</span>
+                <span class="m12 p6">Авто продано</span>
+                <span class="m12 p6">Видалити оголошення</span>
+                <div class="clear"></div>
             </div>
-            <header>
-                <span>Назва:</span>
-                <span>Ціна:</span>
-            </header>
+            <div class="m12 min-data">
+                <span class="m12 p6">Назва:</span>
+                <span class="m12 p6">Ціна:</span>
+                <div class="clear"></div>
+            </div>
             <div class="min-wrap">
-                Опис товару
+                Опис товару <!--todo Виводиться масив даних JS -->
+            </div>
+        </article>
+
+        <article class="min-pab m11 p10">
+            <div class="setting m12">
+                <span class="m12 p6">Добавити в гарячі</span>
+                <span class="m12 p6">Підняти вище</span>
+                <span class="m12 p6">Авто продано</span>
+                <span class="m12 p6">Видалити оголошення</span>
+                <div class="clear"></div>
+            </div>
+            <div class="m12 min-data">
+                <span class="m12 p6">Назва:</span>
+                <span class="m12 p6">Ціна:</span>
+                <div class="clear"></div>
+            </div>
+            <div class="min-wrap">
+                Опис товару <!--todo Виводиться масив даних JS -->
             </div>
         </article>
     </div>
-    <div class="m12 p5">
+    <div class="m12 p7 personally">
         <h2>Особисті дані</h2>
         <form action="#" class="m12">
             <input type="text" value="" placeholder="* Ваше ім'я" class="input">
@@ -40,9 +64,9 @@
             <input type="text" value="" placeholder="* Населений пункт (Назва)" class="input">
             <input type="password" value="" placeholder="* Пароль" class="input">
             <input type="password" value="" placeholder="* Повторіть пароль" class="input">
-            <button class="button">ЗМІНИТИ ДАНІ</button>
-            <button class="">ЗБЕРЕГТИ</button>
-            <button class="">СКАСУВАТИ</button>
+            <button class="m10 p5">ЗМІНИТИ ДАНІ</button>
+            <button class="m10 p3">ЗБЕРЕГТИ</button>
+            <button class="m10 p3">СКАСУВАТИ</button>
 
 
         </form>

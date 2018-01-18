@@ -12,9 +12,9 @@
 
     <link rel="stylesheet" href="css/sprite.css">
     <meta name="description" content="" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="../aspect/js/wow.min.js"></script>
-    <script>new WOW().init();</script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+    <!--<script src="../aspect/js/wow.min.js"></script>-->
+    <!--<script>new WOW().init();</script>-->
 
 
 </head>
@@ -25,13 +25,13 @@
 	<h2>купи авто своєї мрії на <span>avtodim.com.ua</span></h2>
 	</div>
 	<div class="logo-panel">
-		<a href="#" title="">Написати Адміністратору |</a>
-		<a href="#" title="">Купити Запчастини </a>
+		<a href="#" title="" id="massage_admin">Написати Адміністратору |</a>
+		<a href="#" title="" id="not_working">Купити Запчастини </a>
 	</div>
 	<div class=my-office>
-		<div class="sp">
+		<div class="sp" id="enter">
 			ВХІД
-			<div class="enter">
+			<div class="enter hidden">
 				<form action="" >
 					<input type="text" placeholder="Логін">
 					<input type="password" placeholder="Пороль">
@@ -67,13 +67,17 @@
 </nav>
 </header>
 <div class="maps-nav">
-	<div>
-		
+	<div class="maps-a">
+		<a href="">головна</a>
 	</div>
-			
+	<div class="maps-a">
+		<a href="">пошук</a>
+	</div>
+	<div class="clear"></div>
 </div>
 <section>
     <div class="pub">
+
     <div class="header-pub m12">
         <H1 class="m12 p12 c6">BMW 530 Edichen</H1>
         <span class="m12 p12 c5">Ціна: 14000$</span>
@@ -111,8 +115,26 @@
             <p><span>Назва даних</span><span>Дані</span></p>
             <p><span>Назва даних</span><span>Дані</span></p>
         </div>
+        <div class="print icon-if_print_172530"></div>
         <div class="clear"></div>
     </div>
+    <div class="comments m12 p8">
+        <div class="com">
+            <p>Text</p>
+            <p>Autor</p>
+            <p>Data</p>
+        </div>
+        <div class="com-form">
+            <h2>Залиште отзиви, пропозиціЇ</h2>
+            <form action="" name="comments">
+                <textarea required class="input" placeholder="Введіть текст"></textarea>
+                <input type="text" required class="input" placeholder="Ваше Ім'я">
+                <button class="button">ДОБАВИТИ</button>
+            </form>
+            <div class="clear"></div>
+        </div>
+    </div>
+
 </div>
 
 </section>
@@ -137,10 +159,12 @@
 	</div>
 	<div class="footer-partners m12 p4">
 		<p>Розмістити рекламу на сайті</p>
-		<p>Допомога по сайту</p>
-		<p>Наші партнери</p>
+		<p id="help">Допомога по сайту</p>
+		<p id="partners">Наші партнери</p>
 	</div>
 </div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/interface.js"></script>
 <script type="text/javascript">
     // function draw() {
     if (window.innerWidth <= 768) {

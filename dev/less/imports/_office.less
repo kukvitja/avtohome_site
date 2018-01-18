@@ -1,0 +1,76 @@
+.office{
+  box-sizing:border-box;
+  padding:10px 0;
+  h2{
+    text-align:center;
+    font-size:1.3rem;
+  }
+  div{
+    box-sizing:border-box;
+  }
+  .my-announce{
+    float:left;
+    .min-pab{
+      border:2px solid rgba(7, 5, 30, 0.83);
+      margin:10px auto;
+      box-sizing:border-box;
+      background-color:#b6b6b6;
+      border-radius:5px;
+
+      .setting{
+        box-sizing:border-box;
+        span{
+          float:left;
+          display:block;
+          background-color:#0c092f;
+          color:@formSearchBg;
+          box-sizing:border-box;
+          text-align:center;
+          border-bottom:@formSearchBg 2px solid;
+          padding:5px 0;
+          transition: all 0.6s ease;
+          &:hover{
+            background-color:@formSearchBg;
+            color:#0c092f;
+            cursor:pointer;
+          }
+        }
+      }
+      .min-data{
+        span{
+          display:block;
+          float:left;
+          box-sizing:border-box;
+          padding:5px;
+        }
+      }
+      .min-wrap{
+        padding:5px;
+      }
+    }
+  }
+  .personally{
+    float:left;
+    border-top: 4px solid silver;
+    @media screen and (min-width:@tablet-width){
+      border-top: 0;
+      border-left: 4px solid silver;
+    }
+    button{
+      padding:10px;
+      background-color:@formSearchText;
+      color:@formSearchBg;
+      border-radius:4px;
+      font-size:1.2rem;
+      margin:20px auto;
+      transition:all 0.6s ease;
+
+      &:hover{
+        cursor:pointer;
+        background-color:@formSearchBg;
+        color:@formSearchText;
+      }
+    }
+
+  }
+}

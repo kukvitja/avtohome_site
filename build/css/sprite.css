@@ -24,33 +24,45 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-excavator {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -48px 0px;
   width: 48px;
   height: 48px;
 }
 .icon-if_43-twitter_104461 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -79px;
+  background-position: -96px -79px;
   width: 32px;
   height: 32px;
 }
 .icon-if_78-instagram_104425 {
   background-image: url(../img/sprite.png);
-  background-position: -32px -79px;
+  background-position: -64px -79px;
   width: 32px;
   height: 32px;
 }
 .icon-if_80-google-plus_104424 {
   background-image: url(../img/sprite.png);
-  background-position: -64px -79px;
+  background-position: -32px -79px;
   width: 32px;
   height: 32px;
 }
+.icon-if_Remove_27874 {
+  background-image: url(../img/sprite.png);
+  background-position: -54px -48px;
+  width: 24px;
+  height: 24px;
+}
 .icon-if_facebook_icon_291786 {
   background-image: url(../img/sprite.png);
-  background-position: -96px -79px;
+  background-position: 0px -79px;
   width: 32px;
   height: 32px;
+}
+.icon-if_print_172530 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -111px;
+  width: 24px;
+  height: 24px;
 }
 .icon-motorcycle {
   background-image: url(../img/sprite.png);
@@ -72,7 +84,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-truck {
   background-image: url(../img/sprite.png);
-  background-position: -48px 0px;
+  background-position: 0px 0px;
   width: 48px;
   height: 48px;
 }

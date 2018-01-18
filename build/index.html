@@ -12,17 +12,17 @@
 
     <link rel="stylesheet" href="css/sprite.css">
     <meta name="description" content="" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="../aspect/js/wow.min.js"></script>
-    <script>new WOW().init();</script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+    <!--<script src="../aspect/js/wow.min.js"></script>-->
+    <!--<script>new WOW().init();</script>-->
 
 
 </head>
 <body>
-<div class="developed m12 hidden">
+<div class="developed m12 hidden not_working">
 	<span>СТОРІНКА ЗНАХОДИТЬСЯ НА СТАДІЇ РОЗРОБКИ</span>
 </div>
-<div class="form-hidden top-form m10 p6 c4">
+<div class="form-hidden top-form m10 p6 c4 massage_admin hidden">
 	<p>Заповніть форму нище.</p>
 	<form action="" name="help_site">
 		<input type="text" required title="Ім'я" placeholder="Ім'я" class="input">
@@ -42,13 +42,13 @@
 	<h2>купи авто своєї мрії на <span>avtodim.com.ua</span></h2>
 	</div>
 	<div class="logo-panel">
-		<a href="#" title="">Написати Адміністратору |</a>
-		<a href="#" title="">Купити Запчастини </a>
+		<a href="#" title="" id="massage_admin">Написати Адміністратору |</a>
+		<a href="#" title="" id="not_working">Купити Запчастини </a>
 	</div>
 	<div class=my-office>
-		<div class="sp">
+		<div class="sp" id="enter">
 			ВХІД
-			<div class="enter">
+			<div class="enter hidden">
 				<form action="" >
 					<input type="text" placeholder="Логін">
 					<input type="password" placeholder="Пороль">
@@ -84,10 +84,13 @@
 </nav>
 </header>
 <div class="maps-nav">
-	<div>
-		
+	<div class="maps-a">
+		<a href="">головна</a>
 	</div>
-			
+	<div class="maps-a">
+		<a href="">пошук</a>
+	</div>
+	<div class="clear"></div>
 </div>
 <section>
 	<article class="announcement m10 p8 c6">
@@ -157,7 +160,8 @@
 	</div>
 </article>
 	<section class="hot-deals">
-	<div class="wrapper">
+	<div class="hot-deals-left"></div>
+	<div class="wrapper" id="wrapper">
 		<h2>ГАРЯЧІ ПРОПОЗИЦІЇ:</h2>
 		<article> 
 			<div class="hot-deals-foto">
@@ -189,12 +193,25 @@
 
 
 		<article>
-			
+			2
 		</article>
 		<article>
-			
+			3
+		</article>
+		<article>
+			4
+		</article>
+		<article>
+			5
+		</article>
+		<article>
+			6
+		</article>
+		<article>
+			7
 		</article>
 	</div>
+	<div class="hot-deals-right"></div>
 </section>
 	<article class="announcement m10 p8 c6">
 	<div class="announcement-foto">
@@ -394,7 +411,7 @@
 		
 	</div>
 </article>
-	<div class="form-hidden button-form m10 p6 c4">
+	<div class="form-hidden button-form m10 p6 c4 hidden help">
 		<p>Потрібна допомога? Заповніть форму нище і наші менеджері зв'яжуться з Вами.</p>
 		<form action="" name="help_site">
 			<input type="text" required title="Ім'я" placeholder="Ім'я" class="input">
@@ -410,7 +427,7 @@
 	</div>
 
 </section>
-<div class="partners m12">
+<div class="partners m12 hidden">
 	<a href="" class="part m12 p4 c1"><img src="" alt="" title=""></a>
 	<a href="" class="part m12 p4 c1"><img src="" alt="" title=""></a>
 	<a href="" class="part m12 p4 c1"><img src="" alt="" title=""></a>
@@ -439,10 +456,12 @@
 	</div>
 	<div class="footer-partners m12 p4">
 		<p>Розмістити рекламу на сайті</p>
-		<p>Допомога по сайту</p>
-		<p>Наші партнери</p>
+		<p id="help">Допомога по сайту</p>
+		<p id="partners">Наші партнери</p>
 	</div>
 </div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/interface.js"></script>
 <script type="text/javascript">
     // function draw() {
     if (window.innerWidth <= 768) {

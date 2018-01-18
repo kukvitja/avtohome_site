@@ -15,6 +15,7 @@ gulp.task('mover', function() {
     gulp.src('dev/img/*.*').pipe(gulp.dest('build/img/'));
     gulp.src('dev/js/*.js').pipe(gulp.dest('build/js/'));
 
+
 });
 gulp.task('sprite', function() {
   var spriteData = gulp.src('dev/img/icons/*.png').pipe(spritecreator({
@@ -57,4 +58,7 @@ gulp.task('default', function() {
 	gulp.watch(['dev/less/**/*.less'], function(event) {
 		gulp.start('getCSS');
 	});
+    gulp.watch(['dev/js/*.js'], function(event) {
+        gulp.start('mover');
+    });
 });
